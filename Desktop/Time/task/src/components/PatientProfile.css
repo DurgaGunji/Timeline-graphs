@@ -1,0 +1,152 @@
+
+.patient-details {
+    width:auto !important;
+    color:white !important;
+    margin-bottom: 12px;
+    padding: 24px;
+    background-color: #d9e8ff;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #4141d5 !important;
+    
+  }
+  
+  .patient-avatar {
+    width: 80px;
+    height: 80px;
+    margin-right: 24px;
+    background-color: #007bff;
+  }
+  
+  .patient-info {
+    flex-grow: 1;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+   
+  }
+  .info-row{
+    /* display:flex; */
+    /* flex-direction: row; */
+  }
+  
+  .patient-name {
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .patient-id,
+  .patient-contact,
+  .patient-address {
+    margin-bottom: 4px;
+  }
+  
+  .edit-button {
+    text-transform: none;
+    margin-bottom: 4px;
+  }
+  
+  
+   /* Mobile */
+   @media  (max-width: 600px) {
+    .patient-details{ 
+      width:100% !important;
+       display:flex;
+      justify-content: flex-start;
+      flex-direction: column; 
+     
+    }
+    .patient-info{
+      width:100% !important;
+      display:flex;
+      flex-direction: column;
+      /* justify-content: flex-start;
+      margin-left: -50px; */
+    }
+    .info-row{
+      border-right: none !important;
+    }
+    .patient-avatar {
+      /* display:flex;
+      justify-content: flex-start; */
+      width: 50px;
+      height: 50px;
+      margin-right: 600px;
+      /* margin-left:-200px; */
+     
+    }
+  
+    .info-label {
+      font-size: 0.8rem; /* Smaller font size for mobile */
+      display:flex;
+      justify-content: flex-start;
+      /* margin-left:-300px; */
+    }
+  
+    .info-value {
+      font-size: 0.9rem; /* Adjust font size */
+      display:flex;
+      justify-content: flex-start;
+      /* margin-left:-300px; */
+    }
+  
+    .edit-button {
+      width: 10%;
+      padding: 12px; /* Larger padding for touch targets */
+      margin-right: 100px;
+    }
+    .dates-container{
+      /* display: flex; */
+      /* justify-content: center; */
+     
+      width:100%  !important;
+      height:80% !important;
+      margin-bottom: 50px !important;
+    
+     }
+    }
+    /* Tablet */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .patient-details{ 
+      width:100% !important;
+      display:flex;
+     justify-content: flex-start;
+     flex-direction: column; 
+   }
+   .patient-info{
+    width:100% !important;
+     display:flex;
+     flex-direction: column;
+     justify-content: flex-start;
+   }
+   .info-row{
+     border-right: none !important;
+   }
+   .patient-avatar {
+     display:flex;
+     justify-content: flex-start;
+     width: 100px;
+     height: 50px;
+     margin-right: 600px;
+   }
+  
+   .info-label {
+     font-size: 0.8rem; /* Smaller font size for mobile */
+   }
+  
+   .info-value {
+     font-size: 0.9rem; /* Adjust font size */
+   }
+  
+   .edit-button {
+     width: 10%;
+     padding: 12px; /* Larger padding for touch targets */
+     margin-right: 100px;
+   }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+    .info-row{
+        border-right: none !important;
+      }
+}

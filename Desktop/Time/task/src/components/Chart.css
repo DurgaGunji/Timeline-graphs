@@ -1,0 +1,103 @@
+.chart-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    margin-top: 2px solid #ddd;
+    background-color: #ffffff;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+h2 {
+    text-align: left;
+    color: #818181;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    margin-top: 2px;
+}
+
+/* Apply custom style with !important for the dashed grid lines */
+
+/* For Laptops (Small to Large) */
+@media (min-width: 1024px) and (max-width: 1440px) {
+    .chart-container {
+        padding: 20px;
+    }
+
+    /* Make chart responsive to laptop sizes */
+    .chart-container canvas {
+        max-width: 100% !important; /* Ensures the canvas does not exceed the container width */
+        height: auto !important; /* Ensures proper scaling */
+    }
+
+    /* Adjust the font size of the title for smaller screens */
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .chartjs-legend {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet devices (Portrait and Landscape) */
+@media (max-width: 1023px) {
+    /* When the screen width is less than 1023px, like tablets and smaller devices */
+
+    .chart-container {
+        padding: 15px;
+    }
+
+    /* Make chart responsive to smaller screen sizes */
+    .chart-container canvas {
+        max-width: 100% !important; /* Ensures the canvas does not exceed the container width */
+        height: auto !important; /* Ensures proper scaling */
+    }
+
+    /* Adjust the font size of the title for tablets */
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    .chartjs-legend {
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile specific styles (for very small screens like phones) */
+@media (max-width: 480px) {
+    .chart-container {
+        padding: 5px;
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Further reduce the font size for mobile */
+    }
+
+    .chartjs-legend {
+        font-size: 0.8rem;
+    }
+}
+
+/* For Large Tablets or Small Laptops */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .chart-container {
+        padding: 15px;
+    }
+
+    /* Ensure the chart canvas remains responsive */
+    .chart-container canvas {
+        max-width: 100% !important; /* Ensures the canvas does not exceed the container width */
+        height: auto !important; /* Ensures proper scaling */
+    }
+
+    /* Adjust the font size of the title for tablets and smaller laptops */
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .chartjs-legend {
+        font-size: 0.9rem;
+    }
+}
